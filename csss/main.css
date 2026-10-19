@@ -1,0 +1,16 @@
+body{
+        margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex; /* адаптивное отображение + горизонтальное отображение по умолчанию */
+    align-items: center; /* верт выравнивание по центру */
+    justify-content: space-between; /* элементы на равном расстоянии друг от друга */
+}
+.logo{
+    width: 170px;
+
+}
