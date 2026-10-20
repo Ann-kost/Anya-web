@@ -3,14 +3,113 @@ body{
 }
 
 header{
-    width: 100%;
+    width: 90%;
     height: 80px;
     background: black;
     display: flex; /* адаптивное отображение + горизонтальное отображение по умолчанию */
     align-items: center; /* верт выравнивание по центру */
     justify-content: space-between; /* элементы на равном расстоянии друг от друга */
+    padding: 0 5%;
 }
-.logo{
-    width: 170px;
 
+.logo{
+    width: 190px;
+
+}
+a{
+    text-decoration: none;
+}
+
+a, p, button, h1, h2, h3{
+    font-family: "Playfair Display", sans-serif;
+}
+
+nav{
+    display: flex;
+    gap: 20px; /* отступы между элементами */
+}
+
+nav > a{
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tg-btn{
+    color: aliceblue;
+    background: transparent;
+    border: 1px solid brown;
+    padding: 10px 25px;
+}
+
+.tg-btn:hover{
+    background: brown;
+    transition: all 0.3s ease; /* Плавная анимация */
+}
+
+.profile-btn{
+    color: aliceblue;
+}
+
+main{
+    width: 100%;
+}
+
+.sec1{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/ajy.webp");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    border: 1px brown;
+}
+
+.sec1 > p{
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.btns{
+    display: flex;
+    gap: 10px;
+}
+
+.btms > button{
+    color: aliceblue;
+    background: brown;
+    border: 1px solid aliceblue;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.sec2{
+    width: 100%;
+    height: 100vh;
+    background: url("../images/фон.webp");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
