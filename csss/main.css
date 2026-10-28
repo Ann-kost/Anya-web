@@ -83,24 +83,57 @@ h1{
 }
 
 .sec1 > p{
-    font-size: 30px;
+    font-size: 60px;
     color: white;
     font-weight: 100;
     letter-spacing: 2px;
+    -webkit-text-stroke: 1px black;
+    font-weight: bold;
 }
 
 .btns{
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    padding: 50px 25px;
+    width: 50px;
+    height: 50px;
 }
 
 .btms > button{
     color: aliceblue;
     background: brown;
     border: 1px solid aliceblue;
-    padding: 10px 25px;
+    padding: 50px 25px;
     transition: all 0.3s ease;
     font-size: 18px;
+    width: 50px;
+    height: 50px;
+}
+
+.b1{
+    color: aliceblue;
+    background: transparent;
+    border: 1px solid brown;
+    padding: 15px 40px;
+     font-size: 50px;
+}
+
+.b1:hover{
+     background: brown;
+    transition: all 0.3s ease; /* Плавная анимация */
+}
+
+.b2{
+    color: aliceblue;
+    background: transparent;
+    border: 1px solid brown;
+    padding: 15px 40px;
+    font-size: 50px;
+}
+
+.b2:hover{
+     background: brown;
+    transition: all 0.3s ease; /* Плавная анимация */
 }
 
 .sec2{
@@ -113,3 +146,38 @@ h1{
     justify-content: center;
     flex-direction: column;
 }
+
+
+
+h2{
+    font-size: 80px;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    border: 1px brown;
+}
+
+.p2{
+    font-size: 60px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px black;
+    font-weight: bold;
+}
+
+.b3{
+    color: brown;
+    background: transparent;
+    border: 1px solid white;
+    padding: 15px 40px;
+     font-size: 50px;
+     border-radius: 10px;
+}
+
+.b3:hover{
+     background: gray;
+    transition: all 0.3s ease; /* Плавная анимация */
+}
+7565f831d72ec959a3585f1b4f8c75d23b6ccee8
