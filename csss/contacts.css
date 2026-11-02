@@ -1,0 +1,55 @@
+.team-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 30px;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.team-section .card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.team-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.team-section .card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.team-section .card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.team-section .card button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 16px;
+}
+
+.team-section .card button:hover {
+    background: brown;
+}

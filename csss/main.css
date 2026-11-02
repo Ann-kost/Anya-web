@@ -1,183 +1,219 @@
-body{
-        margin: 0;
+body {
+    margin: 0;
 }
 
-header{
-    width: 90%;
-    height: 80px;
-    background: black;
-    display: flex; /* адаптивное отображение + горизонтальное отображение по умолчанию */
-    align-items: center; /* верт выравнивание по центру */
-    justify-content: space-between; /* элементы на равном расстоянии друг от друга */
-    padding: 0 5%;
+* {
+    box-sizing: border-box;
 }
 
-.logo{
-    width: 190px;
-
-}
-a{
+a {
     text-decoration: none;
 }
 
-a, p, button, h1, h2, h3{
+a, p, button, h1, h2, h3 {
     font-family: "Playfair Display", sans-serif;
 }
 
-nav{
-    display: flex;
-    gap: 20px; /* отступы между элементами */
+main {
+    width: 100%;
 }
 
-nav > a{
+header {
+    width: 100%; 
+    height: 80px;
+    background: black;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 5%;
+}
+
+.logo {
+    width: 190px;
+}
+
+nav {
+    display: flex;
+    gap: 20px; 
+}
+
+nav > a {
     color: aliceblue;
     font-size: 18px;
     font-weight: 200;
     text-transform: uppercase;
 }
 
-.header-right{
+.header-right {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.tg-btn{
+.tg-btn {
     color: aliceblue;
     background: transparent;
     border: 1px solid brown;
     padding: 10px 25px;
+    transition: all 0.3s ease;
 }
 
-.tg-btn:hover{
+.tg-btn:hover {
     background: brown;
-    transition: all 0.3s ease; /* Плавная анимация */
 }
 
-.profile-btn{
+.profile-btn {
     color: aliceblue;
 }
 
-main{
-    width: 100%;
-}
-
-.sec1{
+.sec1 {
     width: 100%;
     height: 100vh;
     background: url("../images/ajy.webp");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
-h1{
+h1 {
     font-size: 80px;
     color: white;
     margin: 0;
     text-transform: uppercase;
     font-weight: 900;
-    border: 1px brown;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); 
 }
 
-.sec1 > p{
+.sec1 > p {
     font-size: 60px;
     color: white;
-    font-weight: 100;
     letter-spacing: 2px;
     -webkit-text-stroke: 1px black;
     font-weight: bold;
+    margin: 20px 0 40px 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
-.btns{
+.btns {
     display: flex;
     gap: 20px;
-    padding: 50px 25px;
-    width: 50px;
-    height: 50px;
 }
 
-.btms > button{
+.b1, .b2 {
     color: aliceblue;
-    background: brown;
-    border: 1px solid aliceblue;
-    padding: 50px 25px;
+    background: transparent;
+    border: 2px solid brown;
+    padding: 15px 40px;
+    font-size: 30px; 
+    cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 18px;
-    width: 50px;
-    height: 50px;
+    font-family: inherit;
 }
 
-.b1{
-    color: aliceblue;
-    background: transparent;
-    border: 1px solid brown;
-    padding: 15px 40px;
-     font-size: 50px;
+.b1:hover, .b2:hover {
+    background: brown;
 }
 
-.b1:hover{
-     background: brown;
-    transition: all 0.3s ease; /* Плавная анимация */
-}
-
-.b2{
-    color: aliceblue;
-    background: transparent;
-    border: 1px solid brown;
-    padding: 15px 40px;
-    font-size: 50px;
-}
-
-.b2:hover{
-     background: brown;
-    transition: all 0.3s ease; /* Плавная анимация */
-}
-
-.sec2{
+.sec2 {
     width: 100%;
     height: 100vh;
     background: url("../images/фон.webp");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
-
-
-h2{
+h2 {
     font-size: 80px;
     color: white;
     margin: 0;
     text-transform: uppercase;
     font-weight: 900;
-    border: 1px brown;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
-.p2{
-    font-size: 60px;
+.p2 {
+    font-size: 40px; 
     color: white;
-    font-weight: 100;
     letter-spacing: 2px;
     -webkit-text-stroke: 1px black;
     font-weight: bold;
+    margin: 20px 0 40px 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
-.b3{
+.b3 {
     color: brown;
     background: transparent;
-    border: 1px solid white;
+    border: 2px solid white;
     padding: 15px 40px;
-     font-size: 50px;
-     border-radius: 10px;
+    font-size: 30px; 
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
 }
 
-.b3:hover{
-     background: gray;
-    transition: all 0.3s ease; /* Плавная анимация */
+.b3:hover {
+    background: gray;
+    color: white;
 }
-7565f831d72ec959a3585f1b4f8c75d23b6ccee8
+
+.sec3 {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.top-video-section {
+  display: flex;
+  gap: 30px; 
+  margin-bottom: 30px; 
+  align-items: flex-start;
+}
+
+.main-video-box {
+  width: 60%; 
+}
+
+.text-right {
+  width: 20%; 
+}
+
+h2{
+    color: black;
+}
+
+.main-video-box iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  border-radius: 12px;
+  display: block;
+}
+
+.small-videos-row {
+  display: flex;
+  gap: 20px; 
+}
+
+.small-video {
+  flex: 1; 
+}
+
+.small-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  display: block;
+}
+
