@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    background: #0d0d0f;
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 30px;
+    padding: 60px 20px;
+    background: #0d0d0f;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center; /* Центрируем карточки по вертикали */
+}
+
+.team-section .card {
+    background: #1c1c21; /* Сероватый цвет для темной темы */
+    border: 1px solid #333339;
+    border-radius: 12px;
+    padding: 20px;
+    width: 320px; 
+    height: 320px; /* Делаем карточку квадратной */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Контент сверху */
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.team-section .card:hover {
+    transform: translateY(-5px);
+    background: #24242b;
+}
+
+.team-section .card img {
+    width: 100%;
+    height: 140px; /* Ограничиваем высоту картинки */
+    object-fit: cover; /* Чтобы картинка не искажалась */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background: #333; /* Заглушка, пока нет картинки */
+}
+
+.team-section .card h3 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    font-family: "Playfair Display", sans-serif;
+    color: #f0f0f0;
+}
+
+.team-section .card p {
+    font-size: 15px;
+    color: #a8a8b3;
+    margin: 0 0 15px 0;
+    font-family: "Playfair Display", sans-serif;
+    flex-grow: 1; /* Растягивает текст, прижимая кнопку к низу */
+    overflow: hidden;
+}
+
+.team-section .card button {
+    background: #c46a4a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    margin-top: auto; /* Прижимаем кнопку к самому низу */
+}
+
+.team-section .card button:hover {
+    background: #e08a68;
+}
+
+
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #c46a4a;
+    color: #f0f0f0;
+    font-size: 18px;
+    background: #1c1c21;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.theme-btn:hover {
+    background: #c46a4a;
+    color: #fff;
+    transform: rotate(-15deg);
+}

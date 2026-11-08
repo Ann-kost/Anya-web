@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    background: #f4f4f4; /* Светлый фон */
+    color: #111111;
+}
+
 .meme-grid {
     display: flex;
     gap: 20px;                 
@@ -41,12 +47,38 @@
 .meme-card {
     border-radius: 12px;       
     object-fit: cover;         
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Светлая тень */
     display: block;
+    border: 1px solid #ddd; /* Легкая рамка */
+    transition: transform 0.3s ease;
 }
 
 .meme-card:hover {
     transform: scale(1.02);    
-    transition: transform 0.3s ease;
 }
 
+/* Кнопка переключения темы */
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #8b2f2f;
+    color: #111111;
+    font-size: 18px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.theme-btn:hover {
+    background: #8b2f2f;
+    color: #fff;
+    transform: rotate(15deg);
+}
