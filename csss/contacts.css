@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background: #f4f4f4;
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 30px;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center; 
+}
+
+.team-section .card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 320px; 
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background 0.3s ease;
+    overflow: hidden;
+}
+
+.team-section .card:hover {
+    transform: translateY(-5px);
+    background: #fafafa;
+}
+
+.team-section .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.team-section .card img[src=""] {
+    display: none;
+}
+
+.team-section .card h3 {
+    font-size: 22px;
+    margin: 0 0 5px 0;
+    font-family: "Playfair Display", sans-serif;
+    color: #111111;
+}
+
+.team-section .card p {
+    font-size: 15px;
+    color: #555555;
+    margin: 0 0 10px 0;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.team-section .card button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+.team-section .card button:hover {
+    background: brown;
+}
+
+/* Кнопка переключения темы */
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #8b2f2f;
+    color: #111111;
+    font-size: 18px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.theme-btn:hover {
+    background: #8b2f2f;
+    color: #fff;
+    transform: rotate(15deg);
+}

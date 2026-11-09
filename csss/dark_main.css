@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    background: #0d0d0f;
+    color: #f0f0f0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, p, button, h1, h2, h3 {
+    font-family: "Playfair Display", sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+header {
+    width: 100%; 
+    height: 80px;
+    background: #050506;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 190px;
+}
+
+nav {
+    display: flex;
+    gap: 20px; 
+}
+
+nav > a {
+    color: #f0f0f0;
+    font-size: 18px;
+    font-weight: 200;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+nav > a:hover {
+    color: #c46a4a;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tg-btn {
+    color: #f0f0f0;
+    background: transparent;
+    border: 1px solid #c46a4a;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+.tg-btn:hover {
+    background: #c46a4a;
+    color: #fff;
+}
+
+.profile-btn {
+    color: #f0f0f0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease;
+}
+
+.profile-btn:hover {
+    color: #c46a4a;
+}
+
+/* Кнопка переключения темы */
+.theme-btn {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #c46a4a;
+    color: #f0f0f0;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+    background: #c46a4a;
+    color: #fff;
+    transform: rotate(-15deg);
+}
+
+.sec1 {
+    width: 100%;
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("../images/ajy.webp") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); 
+}
+
+.sec1 > p {
+    font-size: 60px;
+    color: white;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px black;
+    font-weight: bold;
+    margin: 20px 0 40px 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+}
+
+.b1, .b2 {
+    color: #fff;
+    background: transparent;
+    border: 2px solid #c46a4a;
+    padding: 15px 40px;
+    font-size: 30px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.b1:hover, .b2:hover {
+    background: #c46a4a;
+}
+
+.sec2 {
+    width: 100%;
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("../images/фон.webp") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2 {
+    font-size: 80px;
+    color: #f0f0f0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.sec2 h1 {
+    font-size: 80px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.85);
+}
+
+.p2 {
+    font-size: 40px; 
+    color: white;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px black;
+    font-weight: bold;
+    margin: 20px 0 40px 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.b3 {
+    color: #c46a4a;
+    background: transparent;
+    border: 2px solid white;
+    padding: 15px 40px;
+    font-size: 30px; 
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.b3:hover {
+    background: #c46a4a;
+    color: white;
+    border-color: #c46a4a;
+}
+
+.sec3 {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #f0f0f0;
+}
+
+.top-video-section {
+    display: flex;
+    gap: 30px; 
+    margin-bottom: 30px; 
+    align-items: flex-start;
+}
+
+.main-video-box {
+    width: 60%; 
+}
+
+.text-right {
+    width: 20%; 
+}
+
+.text-right h2 {
+    font-size: 32px;
+    color: #f0f0f0;
+    text-shadow: none;
+    text-transform: none;
+    margin: 0 0 10px;
+}
+
+.text-right p {
+    color: #a8a8b3;
+}
+
+.main-video-box iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    border-radius: 12px;
+    display: block;
+    border: 1px solid #2a2a30;
+}
+
+.small-videos-row {
+    display: flex;
+    gap: 20px; 
+}
+
+.small-video {
+    flex: 1; 
+}
+
+.small-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    display: block;
+    border: 1px solid #2a2a30;
+}
