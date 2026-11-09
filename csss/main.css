@@ -1,183 +1,252 @@
-body{
-        margin: 0;
+body {
+    margin: 0;
+    font-family: "Playfair Display", sans-serif; 
 }
 
-header{
-    width: 90%;
-    height: 80px;
-    background: black;
-    display: flex; /* адаптивное отображение + горизонтальное отображение по умолчанию */
-    align-items: center; /* верт выравнивание по центру */
-    justify-content: space-between; /* элементы на равном расстоянии друг от друга */
-    padding: 0 5%;
+* {
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину элементов */
 }
 
-.logo{
-    width: 190px;
-
-}
-a{
+a {
     text-decoration: none;
 }
 
-a, p, button, h1, h2, h3{
-    font-family: "Playfair Display", sans-serif;
-}
-
-nav{
+header {
+    width: 100%; 
+    height: 80px;
+    background: black;
     display: flex;
-    gap: 20px; /* отступы между элементами */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
 }
 
-nav > a{
+.logo {
+    width: 190px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav > a {
     color: aliceblue;
     font-size: 18px;
     font-weight: 200;
     text-transform: uppercase;
 }
 
-.header-right{
+.header-right {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.tg-btn{
+.tg-btn {
     color: aliceblue;
     background: transparent;
     border: 1px solid brown;
     padding: 10px 25px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.tg-btn:hover{
+.tg-btn:hover {
     background: brown;
-    transition: all 0.3s ease; /* Плавная анимация */
+    transition: all 0.3s ease;
 }
 
-.profile-btn{
+.profile-btn {
     color: aliceblue;
 }
 
-main{
+.sec1, .sec2 {
     width: 100%;
-}
-
-.sec1{
-    width: 100%;
-    height: 100vh;
-    background: url("../images/ajy.webp");
-    background-size: cover;
+    min-height: 80vh; 
+    background-position: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: column; /* Элементы друг под другом */
+    align-items: center;    /* Центрирование по горизонтали */
+    justify-content: center;/* Центрирование по вертикали */
+    text-align: center;     /* Текст по центру */
+    padding: 40px 20px;
 }
 
-h1{
+.sec1 {
+    background-image: url("../images/фон.webp");
+}
+.sec2 {
+    background-image: url("../images/фон.webp");
+}
+
+h1, h2 {
     font-size: 80px;
     color: white;
-    margin: 0;
+    margin: 0 0 20px 0;
     text-transform: uppercase;
     font-weight: 900;
-    border: 1px brown;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); 
 }
 
-.sec1 > p{
-    font-size: 60px;
+.sec1 > p, .p2 {
+    font-size: 40px; 
     color: white;
-    font-weight: 100;
     letter-spacing: 2px;
-    -webkit-text-stroke: 1px black;
     font-weight: bold;
+    margin-bottom: 40px; /* Отступ до кнопок */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
-.btns{
+.btns {
+    display: flex;
+    gap: 30px; /* Отступ между кнопками */
+    justify-content: center;
+}
+
+.b1, .b2, .b3 {
+    color: aliceblue;
+    background: transparent;
+    border: 2px solid brown;
+    padding: 15px 40px;
+    font-size: 24px; 
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.b1:hover, .b2:hover {
+    background: brown;
+}
+
+.b3 {
+    color: brown;
+    border: 2px solid white;
+}
+.b3:hover {
+    background: gray;
+    color: white;
+}
+
+.sec3 {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.top-video-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.main-video-box {
+    width: 65%; 
+}
+
+.text-right {
+    width: 35%; 
+    text-align: left; 
+}
+
+.text-right h2 {
+    color: black; 
+    font-size: 36px;
+    text-shadow: none;
+    margin-bottom: 15px;
+}
+
+.text-right p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.main-video-box iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    display: block;
+    border: none;
+}
+
+.small-videos-row {
     display: flex;
     gap: 20px;
-    padding: 50px 25px;
-    width: 50px;
-    height: 50px;
 }
 
-.btms > button{
-    color: aliceblue;
-    background: brown;
-    border: 1px solid aliceblue;
-    padding: 50px 25px;
-    transition: all 0.3s ease;
-    font-size: 18px;
-    width: 50px;
-    height: 50px;
+.small-video {
+    flex: 1;
 }
 
-.b1{
-    color: aliceblue;
-    background: transparent;
-    border: 1px solid brown;
-    padding: 15px 40px;
-     font-size: 50px;
-}
-
-.b1:hover{
-     background: brown;
-    transition: all 0.3s ease; /* Плавная анимация */
-}
-
-.b2{
-    color: aliceblue;
-    background: transparent;
-    border: 1px solid brown;
-    padding: 15px 40px;
-    font-size: 50px;
-}
-
-.b2:hover{
-     background: brown;
-    transition: all 0.3s ease; /* Плавная анимация */
-}
-
-.sec2{
+.small-video iframe {
     width: 100%;
-    height: 100vh;
-    background: url("../images/фон.webp");
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    display: block;
+    border: none;
+}
+.sec3 {
+  width: 100%;
+  padding: 40px 5%; 
+  box-sizing: border-box;
+}
+
+
+.left-video-column {
+  width: 70%; 
+}
+
+.top-video-section {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.main-video-box {
+  width: 100%; 
+}
+
+.text-right {
+  width: 30%; 
+}
+
+.main-video-box iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  display: block;
+  border: none;
+}
+
+.small-videos-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  width: 100%; 
+}
+
+.small-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  display: block;
+  border: none;
+}
+
+/* --- АДАПТИВ ПОД ТЕЛЕФОНЫ --- */
+@media (max-width: 768px) {
+  .top-video-section {
     flex-direction: column;
+  }
+  .left-video-column, .text-right {
+    width: 100%;
+  }
+  .small-videos-row {
+    grid-template-columns: 1fr; 
+  }
 }
 
-
-
-h2{
-    font-size: 80px;
-    color: white;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 900;
-    border: 1px brown;
-}
-
-.p2{
-    font-size: 60px;
-    color: white;
-    font-weight: 100;
-    letter-spacing: 2px;
-    -webkit-text-stroke: 1px black;
-    font-weight: bold;
-}
-
-.b3{
-    color: brown;
-    background: transparent;
-    border: 1px solid white;
-    padding: 15px 40px;
-     font-size: 50px;
-     border-radius: 10px;
-}
-
-.b3:hover{
-     background: gray;
-    transition: all 0.3s ease; /* Плавная анимация */
-}
-7565f831d72ec959a3585f1b4f8c75d23b6ccee8
